@@ -1,4 +1,4 @@
-#classified-top {
+#classifion-banner-top {
     border:0;
     display: table;
     font-size: 15px;
@@ -11,7 +11,7 @@
     width: 100%;
 }
 
-.classification-text{
+.classification-banner-text{
     display: table-cell;
     vertical-align: middle;
 }
