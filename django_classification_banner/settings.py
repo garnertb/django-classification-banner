@@ -1,0 +1,5 @@
+from django.conf import settings
+
+CLASSIFICATION_TEXT = getattr(settings, "CLASSIFICATION_TEXT", 'UNCLASSIFIED')
+CLASSIFICATION_TEXT_COLOR = getattr(settings,"CLASSIFICATION_TEXT_COLOR", 'white')
+CLASSIFICATION_BACKGROUND_COLOR = getattr(settings,"CLASSIFICATION_BACKGROUND_COLOR", 'green')
