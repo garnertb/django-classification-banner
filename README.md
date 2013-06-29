@@ -10,9 +10,9 @@ Installation
 * Make sure both template loaders and staticfiles finders includes app directories.
 * Add ```CLASSIFICATION_TEXT```, ```CLASSIFICATION_TEXT_COLOR```,  and ```CLASSIFICATION_BACKGROUND_COLOR``` variables to your settings.py
     
-    CLASSIFICATION_TEXT = 'UNCLASSIFIED'
+    ```CLASSIFICATION_TEXT = 'UNCLASSIFIED'
     CLASSIFICATION_TEXT_COLOR = 'WHITE'
-    CLASSIFICATION_BACKGROUND_COLOR = 'GREEN'
+    CLASSIFICATION_BACKGROUND_COLOR = 'GREEN'```
 
 
 * Add ```django_classification_banner.context_processors.classification``` to TEMPLATE_CONTEXT_PROCESSORS in settings.py
