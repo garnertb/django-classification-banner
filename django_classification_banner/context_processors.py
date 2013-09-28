@@ -7,9 +7,9 @@ def classification(request):
     """
 
     ctx = {
-        "CLASSIFICATION_TEXT": getattr(settings, "CLASSIFICATION_TEXT"),
-        "CLASSIFICATION_TEXT_COLOR": getattr(settings,"CLASSIFICATION_TEXT_COLOR"),
-        "CLASSIFICATION_BACKGROUND_COLOR": getattr(settings,"CLASSIFICATION_BACKGROUND_COLOR")
+        "classification_text": getattr(settings, "CLASSIFICATION_TEXT", 'UNCLASSIFIED'),
+        "classification_text_color": getattr(settings,"CLASSIFICATION_TEXT_COLOR", 'white'),
+        "classification_background_color": getattr(settings,"CLASSIFICATION_BACKGROUND_COLOR", 'green'),
     }
 
     return ctx

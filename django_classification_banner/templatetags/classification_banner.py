@@ -3,14 +3,15 @@ from django.core.urlresolvers import reverse, reverse_lazy
 
 register = template.Library()
 
-@register.simple_tag
-def classification_banner(classification_text, classification_text_color, classification_background_color, **kwargs):
+@register.inclusion_tag('django_classification_banner/classification.html', takes_context=True)
+def classification_banner(context, **kwargs):
 
-    resp = kwargs
-    resp['CLASSIFICATION_TEXT'] = classification_text
-    resp['CLASSIFICATION_TEXT_COLOR'] = classification_text_color
-    resp['CLASSIFICATION_BACKGROUND_COLOR'] = classification_background_color
+    params = context.update(kwargs)
 
-    return resp
+    return dict(classification_text=params.get('classification_text'),
+                classification_text_color=params.get('classification_text_color'),
+                classification_background_color=params.get('classification_background_color'),
+                )
 
-register.inclusion_tag('django_classification_banner/classification.html')(classification_banner)
+
+
