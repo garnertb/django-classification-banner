@@ -53,7 +53,7 @@ First load the classification banner in your template::
 	
 Then add the banner to your page::
 
-	{% load classification_banner %}
+	{% classification_banner %}
 
 
 A full example::
