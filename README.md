@@ -36,7 +36,7 @@ Add the classification banner context processor to the ```TEMPLATE_CONTEXT_PROCE
         "django_classification_banner.context_processors.classification",
     )
 
-Customize your site's classification settings in the ``settings`` module::
+Customize your site's classification settings in the ``settings`` module:
 	
 	CLASSIFICATION_TEXT='Unclassified//FOUO'
 	CLASSIFICATION_TEXT_COLOR='black'
@@ -47,7 +47,7 @@ Usage
 
 Once installed, you can easily add a classification banner to any template on your site.
 
-First load the classification banner in your template::
+First load the classification banner in your template:
 
 	{% load classification_banner%}
 	
@@ -68,7 +68,7 @@ A full example::
 		</body>
 	</html>
 
-You can also override your default settings from any template::
+You can also override your default settings from any template:
 
     {% load classification_banner %}
 	<html>
