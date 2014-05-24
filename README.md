@@ -49,7 +49,7 @@ Once installed, you can easily add a classification banner to any template on yo
 
 First load the classification banner in your template:
 
-	{% load classification_banner%}
+	{% load classification_banner %}
 	
 Then add the banner to your page::
 
