@@ -21,7 +21,7 @@ Once installed you can configure your project to use the
 django-classification-banner with the following steps.
 
 Add ``django_classification_banner`` to ``INSTALLED_APPS`` in your project's
-``settings`` module::
+``settings`` module:
 
     INSTALLED_APPS = (
         # other apps
@@ -29,7 +29,7 @@ Add ``django_classification_banner`` to ``INSTALLED_APPS`` in your project's
     )
 
 Add the classification banner context processor to the ```TEMPLATE_CONTEXT_PROCESSORS``` setting in your project's
-``settings`` module::
+``settings`` module:
 
     TEMPLATE_CONTEXT_PROCESSORS = (
         # other context processors
@@ -51,12 +51,12 @@ First load the classification banner in your template:
 
 	{% load classification_banner %}
 	
-Then add the banner to your page::
+Then add the banner to your page:
 
 	{% classification_banner %}
 
 
-A full example::
+A full example:
 
 	{% load classification_banner %}
 	<html>
