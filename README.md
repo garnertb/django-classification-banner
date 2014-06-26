@@ -33,14 +33,14 @@ Add the classification banner context processor to the ```TEMPLATE_CONTEXT_PROCE
 
     TEMPLATE_CONTEXT_PROCESSORS = (
         # other context processors
-        "django_classification_banner.context_processors.classification",
+        'django_classification_banner.context_processors.classification',
     )
 
 Customize your site's classification settings in the ``settings`` module:
 	
-	CLASSIFICATION_TEXT='Unclassified//FOUO'
-	CLASSIFICATION_TEXT_COLOR='black'
-	CLASSFICATION_BACKGROUND_COLOR='green'
+	CLASSIFICATION_TEXT = 'Unclassified//FOUO'
+	CLASSIFICATION_TEXT_COLOR = 'black'
+	CLASSFICATION_BACKGROUND_COLOR = 'green'
 
 Usage
 -----
