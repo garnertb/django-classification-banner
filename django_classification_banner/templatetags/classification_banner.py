@@ -5,13 +5,12 @@ register = template.Library()
 
 @register.inclusion_tag('django_classification_banner/classification.html', takes_context=True)
 def classification_banner(context, **kwargs):
+    response = dict()
 
-    params = context.update(kwargs)
+    for var in ['classification_text', 'classification_text_color', 'classification_background_color']:
+        response[var] = kwargs.get(var, context.get(var))
 
-    return dict(classification_text=params.get('classification_text'),
-                classification_text_color=params.get('classification_text_color'),
-                classification_background_color=params.get('classification_background_color'),
-                )
+    return response
 
 
 
