@@ -1,7 +1,10 @@
 {% load staticfiles %}
 
+
+{% if classification_banner_enabled %}
 <link href="{% static 'django_classification_banner/classification.css'%}" rel="stylesheet">
 
 <span id="classification-banner-top">
     <p class="classification-banner-text" style="color:{{ classification_text_color|default:'white'}}; background-color: {{ classification_background_color|default:'green' }}">{{ classification_text|default:'UNCLASSIFIED' }}</p>
 </span>
+{% endif %}
