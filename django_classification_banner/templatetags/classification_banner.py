@@ -1,7 +1,7 @@
 from django import template
-from django.core.urlresolvers import reverse, reverse_lazy
 
 register = template.Library()
+
 
 @register.inclusion_tag('django_classification_banner/classification.html', takes_context=True)
 def classification_banner(context, **kwargs):
@@ -12,6 +12,3 @@ def classification_banner(context, **kwargs):
         response[var] = kwargs.get(var, context.get(var))
 
     return response
-
-
-
