@@ -5,6 +5,6 @@
 <link href="{% static 'django_classification_banner/classification.css'%}" rel="stylesheet">
 
 <span id="classification-banner-top">
-    <p class="classification-banner-text" style="color:{{ classification_text_color|default:'white'}}; background-color: {{ classification_background_color|default:'green' }}">{{ classification_text|default:'UNCLASSIFIED' }}</p>
+    <p class="classification-banner-text" style="color:{{ classification_text_color|default:'white'}}; background-color: {{ classification_background_color|default:'green' }}">{% if classification_link %}<a style="color:{{ classification_text_color|default:'white'}};" href="{{ classification_link }}" target="_blank">{{ classification_text|default:'UNCLASSIFIED' }}</a>{% else %}{{ classification_text|default:'UNCLASSIFIED' }}{% endif %}</p>
 </span>
 {% endif %}

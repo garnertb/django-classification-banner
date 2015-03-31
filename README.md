@@ -41,6 +41,7 @@ Customize your site's classification settings in the ``settings`` module:
 	CLASSIFICATION_TEXT = 'Unclassified//FOUO'
 	CLASSIFICATION_TEXT_COLOR = 'black'
 	CLASSIFICATION_BACKGROUND_COLOR = 'green'
+    CLASSIFICATION_LINK = '/security'
 
 Usage
 -----
